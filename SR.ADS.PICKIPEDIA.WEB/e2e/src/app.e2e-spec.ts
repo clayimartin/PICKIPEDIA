@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('SR-ADS-PICKIPEDIA-WEB app is running!');
+    expect(page.getTitleText()).toEqual('sr.ads.pickipedia.web app is running!');
   });
 
   afterEach(async () => {
