@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SR-ADS-PICKIPEDIA-WEB": {
+    "SR.ADS.PICKIPEDIA.WEB": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SR-ADS-PICKIPEDIA-WEB",
+            "outputPath": "dist/SR.ADS.PICKIPEDIA.WEB",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SR-ADS-PICKIPEDIA-WEB:build"
+            "browserTarget": "SR.ADS.PICKIPEDIA.WEB:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SR-ADS-PICKIPEDIA-WEB:build:production"
+              "browserTarget": "SR.ADS.PICKIPEDIA.WEB:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SR-ADS-PICKIPEDIA-WEB:build"
+            "browserTarget": "SR.ADS.PICKIPEDIA.WEB:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SR-ADS-PICKIPEDIA-WEB:serve"
+            "devServerTarget": "SR.ADS.PICKIPEDIA.WEB:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SR-ADS-PICKIPEDIA-WEB:serve:production"
+              "devServerTarget": "SR.ADS.PICKIPEDIA.WEB:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "SR-ADS-PICKIPEDIA-WEB"
+  "defaultProject": "SR.ADS.PICKIPEDIA.WEB"
 }
