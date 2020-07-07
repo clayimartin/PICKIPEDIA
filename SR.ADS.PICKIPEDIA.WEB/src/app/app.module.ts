@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent]
+  bootstrap: [WelcomeComponent]
 })
 export class AppModule { }
