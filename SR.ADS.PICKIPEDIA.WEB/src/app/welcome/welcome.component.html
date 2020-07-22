@@ -1,7 +1,57 @@
+<h1>welcome component</h1>
 <p>welcome works!</p>
 <img src="/assets/images/swissre_logo.png" />
 
+
+<button (click)="stringToLog('x')">
+  sadasd as ddasasd
+</button>
+
+
+<button (click)="stringToLog('s')">
+  {{someObject.name}}
+</button>
+
+<p>
+  <event-list [something]="someObject" #thumb (eventClick)="handleEventClicked($event)"></event-list>
+  <button mat-raised-button (click)="thumb.logFoo()">BLog foo</button>
+</p>
+
+
+
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>
+
+
+
+
 <mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
+
+
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+
+  <mat-drawer-content>Main content
+
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+
+  </mat-drawer-content>
 </mat-drawer-container>
+

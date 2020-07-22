@@ -1,0 +1,28 @@
+<mat-toolbar color="primary" class="navBar">
+  <img src="./assets/images/SR_Logo_White.png" aria-label="Logo" alt="Logo" />
+  <div>PICKIPEDIA</div>
+  <div>
+    <span>All events</span>
+    <span>Angular</span>
+  </div>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <!-- #enddocregion mat-menu-trigger-for -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>All Events</button>
+    <button mat-menu-item>Create Event</button>
+    <button mat-menu-item>Angular Connect</button>
+  </mat-menu>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+
+  <form id="searchForm" class="navbar-form navbar-right">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search Sessions">
+    </div>
+    <button class="btn btn-default">
+      Search
+    </button>
+  </form>
+
+</mat-toolbar>
